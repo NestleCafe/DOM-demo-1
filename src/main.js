@@ -1,6 +1,7 @@
-window.dom = {
-    find(selector, scope){
-    	return (scope || document.querySelectorAll(selector))
+window.dom = {  //
+    find(selector, scope){  
+      //dom.find('#test') ||dom.find('.red', test) 
+    	return (scope || document).querySelectorAll(selector)
     },
     style(node, name, value){
         if(arguments.length ===3){					//dom.style(div,'color','red')
